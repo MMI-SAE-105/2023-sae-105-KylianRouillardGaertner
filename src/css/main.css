@@ -1,2 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+.menu {
+    position : fixed;
+    top: 30;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    background: #fff;
+    display: grid;
+}
+.menuBtn {
+    position: relative;
+    z-index: 10;
+}
+.noscroll,
+.noscroll body {
+    overflow: hidden;
+}

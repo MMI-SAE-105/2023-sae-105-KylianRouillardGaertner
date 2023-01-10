@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Pré-renaissance en Italie</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/src/css/main.css'>
+        <script defer src="https://unpkg.com/alpinejs"></script>
+    </head>
+    <body>
+        <header>
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menuBtn">
+                <img src="/public/img/Icones/hamburger.webp" alt="Icone menu">
+            </button>
+            <a href="#">EN</a>
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms class="menu">
+                <ul>
+                    <li><a href="#">ACCUEIL</a></li>
+                    <li><a href="#">BILLET</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">DUCCIO DI BUONINSEGNA</a></li>
+                    <li><a href="#">GIOTTO DI BONDONE</a></li>
+                    <li><a href="#">GIOVANNI DA MILANO</a></li>
+                    <li><a href="#">LUCA DI TOMMÈ</a></li>
+                </ul>
+            </nav>
+            <h1>Pré-renaissance en Italie</h1>
+        </header>
+    </body>
+</html>
