@@ -136,3 +136,10 @@ img {
     border-bottom-right-radius:0;
     border-bottom-left-radius:0;
 }
+
+.accordeon button{
+    margin-left: 20px;
+    width: 320px;
+    height: 38px;
+    margin-bottom: 5px;
+}

@@ -7,6 +7,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='/src/css/main.css'>
         <script defer src="https://unpkg.com/alpinejs"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
     <body>
         <header>
@@ -115,7 +116,7 @@
             </article>
             <div class="frise">
                 <img class="imgfrise" src="/public/img/Artistes/giotto.webp" alt="">
-                <p>Giotto di Bondone</p>
+                <h2>Giotto di Bondone</h2>
                 <p>1266-1337</p>
                 <div>
                     <a href="#">En savoir plus</a>
@@ -123,7 +124,7 @@
             </div>
             <div class="frise">
                 <img class="imgfrise" src="/public/img/Artistes/giovanni.webp" alt="">
-                <p>Giovanni da Milano</p>
+                <h2>Giovanni da Milano</h2>
                 <p>1330-1389</p>
                 <div>
                     <a href="#">En savoir plus</a>
@@ -131,12 +132,32 @@
             </div>
             <div class="frise">
                 <img class="imgfrise" src="/public/img/Artistes/luca.webp" alt="">
-                <p>Luca di Tommè</p>
+                <h2>Luca di Tommè</h2>
                 <p>1330-1389</p>
                 <div>
                     <a href="#">En savoir plus</a>
                 </div>
             </div>
+        </div>
+        <h2>Information supplémentaire</h2>
+        <div class="accordeon">
+            <section x-data="{sect1 : false}">
+              <button @click="sect1 = ! sect1">Horaires d'ouverture</button>
+              <p x-show="sect1" x-collapse.100ms>Tous les jours de <strong>11h</strong> à <strong>20h</strong>, sauf le lundi. Nocturne le mardi, jusqu'à <strong>22h</strong>. La fermeture des salles débute à <strong>19h45</strong> (<strong>21h45</strong> les mardis).</p>
+            </section>
+            <section x-data="{sect2 : false}">
+              <button @click="sect2 = ! sect2">Tarifs</button>
+              <p x-show="sect2" x-collapse.200ms>Plein Tarif : <strong>11€</strong></p>
+              <p x-show="sect2" x-collapse.200ms>Tarif Réduit : <strong>7,50€</strong></p>
+              <p x-show="sect2" x-collapse.200ms>Réduction 13-25ans : <strong>5€</strong></p>
+              <p x-show="sect2" x-collapse.200ms>Fondation Cartier Pass : <strong>18€ - 50€</strong></p>
+              <p x-show="sect2" x-collapse.200ms>Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants : <strong>Gratuit</strong></p>
+            </section>
+            <section x-data="{sect3 : false}">
+              <button @click="sect3 = ! sect3">Lieu et Dates d'expiration</button>
+              <p x-show="sect3" x-collapse.min.50px>Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+              <p x-show="sect3" x-collapse.min.50px>Dates : Du mardi 13 avril 2021 au mercredi 23 juin 2021</p>
+            </section>
         </div>
     </body>
 </html>
