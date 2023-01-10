@@ -142,6 +142,10 @@ img {
     border-bottom-left-radius:0;
 }
 
+.accordeon {
+    margin-bottom: 20px;
+}
+
 .accordeon button{
     margin-left: 20px;
     width: 320px;
@@ -160,7 +164,7 @@ header {
 footer{
     background-color: #D09C42;
     margin: 0 -0.5rem 0 -10px;
-    padding-top: 5px;
+    padding-top: 15px;
     padding-bottom: 15px;
 }
 
