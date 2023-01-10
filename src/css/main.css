@@ -4,6 +4,11 @@ html {
     font-family: 'IM Fell French Canon', serif;
 }
 
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -142,4 +147,28 @@ img {
     width: 320px;
     height: 38px;
     margin-bottom: 5px;
+}
+
+header {
+    background-color: #D09C42;
+    margin: 0 -0.5rem 0 -10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+footer{
+    background-color: #D09C42;
+    margin: 0 -0.5rem 0 -10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer img {
+    width: 10%;
 }
