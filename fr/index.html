@@ -44,5 +44,64 @@
         <p>
             On assiste à une véritable compétition des cités-États qui s'offrent les services d'artistes aux noms prestigieux. D'autres capitales italiennes, comme Bologne, Ferrare, Naples, Palerme et Ravenne, ont contribué aussi par leurs échanges nombreux, au renouveau artistique.
         </p>
+        <h2>L'exposition en Image</h2>
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+            <button @click="const p = $refs.parent ; p.scrollLeft -= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt</button>
+            <button @click="const p = $refs.parent ; p.scrollLeft += p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">&gt</button>
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+            hrefCourant = '#'+
+                              [...$refs.parent.children]
+                               .find(e=>e.getBoundingClientRect().x>=0)
+                               .id">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/descent-into-hell-1311.webp" alt="image ecran 1" class="imgcarrousel">
+                        <figcaption>Descent into Hell</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/bucher.webp" alt="image ecran 2" class="imgcarrousel portrait">
+                        <figcaption>Martirio di S. Barnaba</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/battu.webp" alt="image ecran 3" class="imgcarrousel portrait1">
+                        <figcaption>Martirio di S. Caterina</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/lazarus.webp" alt="image ecran 4" class="imgcarrousel portrait1">
+                        <figcaption>The Raising of Lazarus</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/portrait.webp" alt="image ecran 5" class="imgcarrousel portrait2">
+                        <figcaption>Saint John the Baptist</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/scene.webp" alt="image ecran 6" class="imgcarrousel">
+                        <figcaption>St. Francis Honoured by a Simple Man</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-7" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/the-last-supper-1311 2.webp" alt="image ecran 7" class="imgcarrousel">
+                        <figcaption>The Last Supper</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-8" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/vierge.webp" alt="image ecran 8" class="imgcarrousel portrait">
+                        <figcaption>Vierge d'Ognissanti</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
