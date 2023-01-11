@@ -161,13 +161,20 @@ img {
 }
 
 .frise .name {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .frise .description {
     margin-top: 35px;
     margin-left: 25px;
+}
+
+.frise .description2 {
+    margin-top: 35px;
+    margin-right: 46px;
+    margin-left: 10px;
 }
 
 .frise .sousdesc {
