@@ -3,8 +3,10 @@
 - PRÉNOM : Kylian
 - URL du site : https://sae105.kyliangaertner.space
 - URL FIGMA : https://www.figma.com/file/ISi5fbhhyyFXnviFcAgRCe/SAE-105-(2022)-(Copy)?node-id=322%3A1210&t=gA7aQnx7UtAcLxOr-1
-- URL du raport acc : https://sae105.kyliangaertner.space/reports/accueil.html
-
+- URL du rapport acc : https://sae105.kyliangaertner.space/reports/accueil.html
+- URL du rapport contact : https://sae105.kyliangaertner.space/reports/contact.html
+- URL du rapport artiste1 : https://sae105.kyliangaertner.space/reports/artiste1.html
+- URL du rapport oeuvre1 : https://sae105.kyliangaertner.space/reports/oeuvre1.html
 # Structure de départ pour la SAE 105.
 
 La structure de votre projet doit respecter scrupuleusement le modèle fourni dans ce dépôt (Repository).
