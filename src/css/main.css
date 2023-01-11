@@ -18,16 +18,20 @@ img {
 
 h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 500;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-top: 35px;
     margin-bottom: 15px;
     text-align: center;
     font-weight: 500;
+}
+
+p {
+    font-size: 14px;
 }
 
 .date {
@@ -67,6 +71,20 @@ h2 {
 .noscroll,
 .noscroll body {
     overflow: hidden;
+}
+
+.firsth2 {
+    margin-top: 10px;
+}
+
+.debutarticle {
+    display: flex;
+    flex-direction: row;
+}
+
+.debutarticle img {
+    height: 200px;
+    margin-right: 20px;
 }
 
 .carrousel_parent-ecrans {
