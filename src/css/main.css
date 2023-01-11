@@ -239,6 +239,11 @@ p {
     margin-bottom: 5px;
 }
 
+.accordeon .textacc {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 header {
     background-color: #D09C42;
     margin: 0 -0.5rem 0 -10px;
