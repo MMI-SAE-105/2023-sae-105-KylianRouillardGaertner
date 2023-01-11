@@ -315,6 +315,57 @@ footer .facebook {
     margin-right: 20px;
 }
 
+.debutoeuvre:first-of-type {
+    margin-top: 20px;
+}
+
 .debutoeuvre:last-of-type {
     margin-bottom: 50px;
+}
+
+/* Page Contact */
+
+form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+  
+form input[type="text"], form input[type="email"] {
+    width: 90%;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #D09C42;
+    border: 1px solid #D09C42;
+    box-shadow: 2px 2px 8px 0px #373737;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+  
+form textarea {
+    width: 90%;
+    height: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #D09C42;
+    border: 1px solid #D09C42;
+    box-shadow: 2px 2px 8px 0px #373737;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+form input[type="submit"] {
+    width: 130px;
+    height: 35px;
+    margin-top: 25px;
+    margin-bottom: 53px;
+    margin-left: 28%;
+    background-color: #D09C42;
+    border: 1px solid #D09C42;
+    box-shadow: 2px 2px 8px 0px #373737;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    text-align: center;
 }
