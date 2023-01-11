@@ -14,9 +14,9 @@
             <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menuBtn">
                 <img src="/public/img/Icones/hamburger.webp" alt="Icone menu">
             </button>
-            <a href="#">EN</a>
+            <a class="lang" href="#"><strong>EN</strong></a>
             <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms class="menu">
-                <ul>
+                <ul class="menu_liste">
                     <li><a href="#">ACCUEIL</a></li>
                     <li><a href="#">BILLET</a></li>
                     <li><a href="#">CONTACT</a></li>
@@ -108,7 +108,7 @@
         <div>
             <article class="frise">
                 <img class="imgfrise" src="/public/img/Artistes/Duccio.webp" alt="">
-                <h2>Duccio di Buoninsegna</h2>
+                <h2 class="name">Duccio di Buoninsegna</h2>
                 <p>1255-1318</p>
                 <div>
                     <a href="#">En savoir plus</a>
@@ -116,7 +116,7 @@
             </article>
             <div class="frise">
                 <img class="imgfrise" src="/public/img/Artistes/giotto.webp" alt="">
-                <h2>Giotto di Bondone</h2>
+                <h2 class="name">Giotto di Bondone</h2>
                 <p>1266-1337</p>
                 <div>
                     <a href="#">En savoir plus</a>
@@ -124,7 +124,7 @@
             </div>
             <div class="frise">
                 <img class="imgfrise" src="/public/img/Artistes/giovanni.webp" alt="">
-                <h2>Giovanni da Milano</h2>
+                <h2 class="name">Giovanni da Milano</h2>
                 <p>1330-1389</p>
                 <div>
                     <a href="#">En savoir plus</a>
@@ -132,7 +132,7 @@
             </div>
             <div class="frise">
                 <img class="imgfrise" src="/public/img/Artistes/luca.webp" alt="">
-                <h2>Luca di Tommè</h2>
+                <h2 class="name">Luca di Tommè</h2>
                 <p>1330-1389</p>
                 <div>
                     <a href="#">En savoir plus</a>

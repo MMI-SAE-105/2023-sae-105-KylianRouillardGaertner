@@ -20,12 +20,24 @@ img {
 
 .menu {
     position : fixed;
-    top: 30;
+    top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vw;
-    background: #fff;
+    width: 100%;
+    height: 100%;
+    background: #D09C42;
     display: grid;
+}
+
+.menu_liste {
+    margin-top: 230px;
+    padding-left: 0;
+}
+
+.menu_liste li {
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .menuBtn {
@@ -156,9 +168,21 @@ img {
 header {
     background-color: #D09C42;
     margin: 0 -0.5rem 0 -10px;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 15px;
-    padding-left: 5px;
+    padding-left: 10px;
+}
+
+header a {
+    color: #000000;
+    text-decoration: none;
+}
+
+header .lang {
+    position: relative;
+    top: -10px;
+    padding-left: 15rem;
+    font-size: 25px;
 }
 
 footer{
