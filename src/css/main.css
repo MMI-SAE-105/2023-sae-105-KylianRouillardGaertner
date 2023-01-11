@@ -288,3 +288,19 @@ footer img {
 footer .facebook {
     margin-left: 34px;
 }
+
+/* Page Artiste */
+
+.oeuvrepres{
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+.oeuvrepres:last-of-type {
+    margin-bottom: 50px;
+}
+
+/* Page Oeuvre */
+
