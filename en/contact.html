@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Pré-renaissance en Italie</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/src/css/main.css'>
+        <script defer src="https://unpkg.com/alpinejs"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menuBtn">
+                <img src="/public/img/Icones/hamburger.webp" alt="Icone menu">
+            </button>
+            <a class="lang" href="#"><strong>EN</strong></a>
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms class="menu">
+                <ul class="menu_liste">
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="billet.html">BILLET</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="artiste1.html">DUCCIO DI BUONINSEGNA</a></li>
+                    <li><a href="artiste3.html">GIOTTO DI BONDONE</a></li>
+                    <li><a href="artiste2.html">GIOVANNI DA MILANO</a></li>
+                    <li><a href="artiste4.html">LUCA DI TOMMÈ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Contact</h1>
+        <p style="margin-left: 10px;">Vous pouvez nous contacter en remplissant ce formulaire</p>
+        <section>
+            <form>
+                <label for="nom">Nom complet :</label><br>
+                <input type="text" id="nom" name="nom"><br>
+                <label for="email">Mail :</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for "message">Message :</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+        <footer>
+            <a href="index.html">Accueil</a>
+            <a href="contact.html">Contact</a>
+            <a href="billet/html">Billets</a>
+            <div>
+                <a href="https://www.facebook.com"><img class="facebook" src="/public/img/Icones/facebook.webp" alt="facebook"></a>
+                <a href="https://www.twitter.com"><img src="/public/img/Icones/twitter.webp" alt="twitter"></a>
+                <a href="https://www.Instagram.com"><img src="/public/img/Icones/instagram.webp" alt="instagram"></a>
+            </div>
+        </footer>
+    </body>
+</html>

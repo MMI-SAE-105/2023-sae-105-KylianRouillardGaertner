@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Pré-renaissance en Italie</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/src/css/main.css'>
+        <script defer src="https://unpkg.com/alpinejs"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menuBtn">
+                <img src="/public/img/Icones/hamburger.webp" alt="Icone menu">
+            </button>
+            <a class="lang" href="#"><strong>EN</strong></a>
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms class="menu">
+                <ul class="menu_liste">
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="billet">BILLET</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="artiste1.html">DUCCIO DI BUONINSEGNA</a></li>
+                    <li><a href="artiste3.html">GIOTTO DI BONDONE</a></li>
+                    <li><a href="artiste2.html">GIOVANNI DA MILANO</a></li>
+                    <li><a href="artiste4.html">LUCA DI TOMMÈ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Pré-renaissance en Italie</h1>
+        <img src="/public/img/Accueil/img1.webp" alt="Bannière présentation">
+        <H2 class="firsth2">Du 13 avril au 23 juin 2021</H2>
+        <div class="debutarticle">
+            <img src="/public/img/Accueil/img2.webp" alt="Image de Jésus cruxifier">
+            <div>
+                <p>
+                    C'est le siècle de la Première Renaissance mouvement qui amorce le début de la Renaissance en Europe.
+                </p>
+                <p>
+                    Ce mouvement qui se caractérise en peinture par une rupture avec le goût byzantin régnant dans toute l'Europe, apparaît à Florence en premier lieu.
+                </p>
+            </div>
+        </div>
+        <p style="margin-left: 10px;">
+            À cette période, un véritable bouillonnement culturel voit s'affirmer en matière d'art, dans les cités de Venise, Milan, Rome et Mantoue pour ne citer que les plus émergentes.
+        </p>
+        <p style="margin-left: 10px;">
+            On assiste à une véritable compétition des cités-États qui s'offrent les services d'artistes aux noms prestigieux. D'autres capitales italiennes, comme Bologne, Ferrare, Naples, Palerme et Ravenne, ont contribué aussi par leurs échanges nombreux, au renouveau artistique.
+        </p>
+        <h2>L'exposition en Image</h2>
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+            <button @click="const p = $refs.parent ; p.scrollLeft -= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt</button>
+            <button @click="const p = $refs.parent ; p.scrollLeft += p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">&gt</button>
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+            hrefCourant = '#'+
+                              [...$refs.parent.children]
+                               .find(e=>e.getBoundingClientRect().x>=0)
+                               .id">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/descent-into-hell-1311.webp" alt="image ecran 1" class="imgcarrousel">
+                        <figcaption>Descent into Hell</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/bucher.webp" alt="image ecran 2" class="imgcarrousel portrait">
+                        <figcaption>Martirio di S. Barnaba</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/battu.webp" alt="image ecran 3" class="imgcarrousel portrait1">
+                        <figcaption>Martirio di S. Caterina</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/lazarus.webp" alt="image ecran 4" class="imgcarrousel portrait1">
+                        <figcaption>The Raising of Lazarus</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/portrait.webp" alt="image ecran 5" class="imgcarrousel portrait2">
+                        <figcaption>Saint John the Baptist</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/scene.webp" alt="image ecran 6" class="imgcarrousel">
+                        <figcaption>St. Francis Honoured by a Simple Man</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-7" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/the-last-supper-1311 2.webp" alt="image ecran 7" class="imgcarrousel">
+                        <figcaption>The Last Supper</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-8" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Oeuvres/carrousel/vierge.webp" alt="image ecran 8" class="imgcarrousel portrait">
+                        <figcaption>Vierge d'Ognissanti</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <h2>Les Artistes</h2>
+        <div>
+            <article class="frise">
+                <img class="imgfrise" src="/public/img/Artistes/Duccio.webp" alt="">
+                <div class="description">
+                    <h2 class="name">Duccio di Buoninsegna</h2>
+                    <div class="sousdesc">
+                        <p>1255-1318</p>
+                        <a class="infoplus" href="artiste1.html">En savoir plus</a>
+                    </div>
+                </div>
+            </article>
+            <div class="frise">
+                <div class="description2">
+                    <h2 class="name">Giotto di Bondone</h2>
+                    <div class="sousdesc">
+                        <p>1266-1337</p>
+                        <a class="infoplus" href="artiste3.html">En savoir plus</a>
+                    </div>
+                </div>
+                <img class="imgfrise" src="/public/img/Artistes/giotto.webp" alt="">
+            </div>
+            <div class="frise">
+                <img class="imgfrise" src="/public/img/Artistes/giovanni.webp" alt="">
+                <div class="description">
+                    <h2 class="name">Giovanni da Milano</h2>
+                    <div class="sousdesc">
+                        <p>1330-1389</p>
+                        <a class="infoplus" href="artiste2.html">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="frise">
+                <div class="description2">
+                    <h2 class="name">Luca di Tommè</h2>
+                    <div class="sousdesc">
+                        <p>1330-1389</p>
+                        <a class="infoplus" href="artiste4.html">En savoir plus</a>
+                    </div>
+                </div>
+                <img class="imgfrise" src="/public/img/Artistes/luca.webp" alt="">
+            </div>
+        </div>
+        <h2>Information supplémentaire</h2>
+        <div class="accordeon">
+            <section x-data="{sect1 : false}">
+              <button @click="sect1 = ! sect1">Horaires d'ouverture</button>
+              <p class="textacc" x-show="sect1" x-collapse.100ms>Tous les jours de <strong>11h</strong> à <strong>20h</strong>, sauf le lundi. Nocturne le mardi, jusqu'à <strong>22h</strong>. La fermeture des salles débute à <strong>19h45</strong> (<strong>21h45</strong> les mardis).</p>
+            </section>
+            <section x-data="{sect2 : false}">
+              <button @click="sect2 = ! sect2">Tarifs</button>
+              <p class="textacc" x-show="sect2" x-collapse.200ms>Plein Tarif : <strong>11€</strong></p>
+              <p class="textacc" x-show="sect2" x-collapse.200ms>Tarif Réduit : <strong>7,50€</strong></p>
+              <p class="textacc" x-show="sect2" x-collapse.200ms>Réduction 13-25ans : <strong>5€</strong></p>
+              <p class="textacc" x-show="sect2" x-collapse.200ms>Fondation Cartier Pass : <strong>18€ - 50€</strong></p>
+              <p class="textacc" x-show="sect2" x-collapse.200ms>Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants : <strong>Gratuit</strong></p>
+            </section>
+            <section x-data="{sect3 : false}">
+              <button @click="sect3 = ! sect3">Lieu et Dates d'expiration</button>
+              <p class="textacc" x-show="sect3" x-collapse.min.50px>Lieu : Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+              <p class="textacc" x-show="sect3" x-collapse.min.50px>Dates : Du mardi 13 avril 2021 au mercredi 23 juin 2021</p>
+            </section>
+        </div>
+        <footer>
+            <a href="index.html">Accueil</a>
+            <a href="contact.html">Contact</a>
+            <a href="billet.html">Billets</a>
+            <div>
+                <a href="https://www.facebook.com"><img class="facebook" src="/public/img/Icones/facebook.webp" alt="facebook"></a>
+                <a href="https://www.twitter.com"><img src="/public/img/Icones/twitter.webp" alt="twitter"></a>
+                <a href="https://www.Instagram.com"><img src="/public/img/Icones/instagram.webp" alt="instagram"></a>
+            </div>
+        </footer>
+    </body>
+</html>
