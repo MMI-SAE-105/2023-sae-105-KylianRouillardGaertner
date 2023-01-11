@@ -46,6 +46,7 @@ p {
     height: 100%;
     background: #D09C42;
     display: grid;
+    z-index: 3;
 }
 
 .menu_liste {
